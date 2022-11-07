@@ -1,0 +1,12 @@
+version: '3.5'
+
+services:
+  self-painter:
+    container_name: self-painter-app
+    build: 
+      context: .
+    image: javeke/self-painter
+    working_dir: /usr/app
+    tty: true
+    ports:
+      - "6500:6500"
